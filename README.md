@@ -1,4 +1,4 @@
-#Submittal Process
+# SubmittalProcess
 
 ## Requirements
 
@@ -24,7 +24,7 @@ Clone this repository, where `app` is the name of your app.
 git clone https://github.com/PointSource/reserved-ui.git
 ```
 
-##Change into client directory.
+## Change into client directory
 
 Install the dependencies. Running `npm install` will also automatically run `bower install` after. If you're running Mac OS or Linux, you may need to run `sudo npm install` instead, depending on how your machine is configured.
 
