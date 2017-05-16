@@ -1,0 +1,30 @@
+<div class="submittal-page">
+  <div class="col-md-12">
+    <span class="col-md-4"> Select a Company: </span>
+    <select required="true" ng-options="company.companyName for company in data.company" ng-model="company" class="col-md-6"></select>
+  </div>
+  <div class="col-md-12">
+    <span class="col-md-4">Select a schedule: </span>
+    <select required="true" ng-options="schedule.num for schedule in data.schedule | filter : {'id': company.id}" ng-model="schedule" class="col-md-6"></select>
+  </div>
+  <div class="col-md-12">
+    <span class="col-md-4">Select a material: </span>
+    <select required="true" ng-options="schedule.name for schedule in data.material | filter : {'id': company.id}" ng-model="material" class="col-md-6"></select>
+  </div>
+  <div class="col-md-12">
+    <span class="col-md-4">Select a optTemp: </span>
+    <select required="true" ng-options="schedule.optTemp for schedule in data.temp | filter : {'id': company.id}" ng-model="optTemp" class="col-md-6"></select>
+  </div>
+  <div class="col-md-12">
+    <span class="col-md-4">Select a standard: </span>
+    <select required="true" ng-options="schedule.refStd for schedule in data.standard | filter : {'id': company.id}" ng-model="standard" class="col-md-6"></select>
+  </div>
+  <div class="col-md-12">
+    <span class="col-md-4">Select a standard2: </span>
+    <select required="true" ng-options="schedule.name for schedule in data.standardTwo | filter : {'id': company.id}" ng-model="standardTwo" class="col-md-6"></select>
+  </div>
+  <div class="col-md-12">
+    <span class="col-md-4">Select a config: </span>
+    <select required="true" ng-options="schedule.name for schedule in data.config | filter : {'id': company.id}" ng-model="config" class="col-md-6"></select>
+  </div>
+</div>
